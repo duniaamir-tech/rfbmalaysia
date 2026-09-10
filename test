@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <style>
+        /* Global Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Container Layout */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            transition: color 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #4b5563;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f2937;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .nav-links { display: none; } /* Simplifies mobile view */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LaunchPad</div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Build Your Next Big Idea Faster</h1>
+            <p>A simple, elegant, and fully responsive HTML template designed to help you showcase your application, product, or service beautifully.</p>
+            <a href="#" class="btn">Get Started Free</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div style="text-align: center;">
+                <h2>Why Choose Us?</h2>
+                <p style="color: #6b7280;">Everything you need to launch with confidence.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>⚡ Blazing Fast</h3>
+                    <p>Optimized for rapid loading speeds to keep your visitors engaged and conversions high.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Fully Responsive</h3>
+                    <p>Looks gorgeous on desktops, tablets, and smartphones right out of the box.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Easy Customization</h3>
+                    <p>Clean HTML structure and straightforward CSS make changing themes a breeze.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LaunchPad. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

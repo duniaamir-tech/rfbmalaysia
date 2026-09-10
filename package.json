@@ -1,0 +1,21 @@
+{
+  "name": "dpmm-putrajaya-portal",
+  "version": "1.0.0",
+  "description": "Serverless website template with Tailwind CSS, JSON storage, and public_html structure",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --minify",
+    "dev": "npx tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --watch"
+  },
+  "keywords": [
+    "tailwind",
+    "serverless",
+    "vercel",
+    "json"
+  ],
+  "author": "Ts. Amiruddin bin Muhammad Dunia",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RFB Malaysia Sdn. Bhd. | Engineering & IT Solutions</title>
+    <title>RFB Malaysia Sdn. Bhd. | Precision GIS, Telecom Infrastructure & Enterprise Solutions</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            DEFAULT: '#1e3a8a',
+                            light: '#3b82f6',
+                            accent: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Include Header Component -->
-    <!--#include virtual="header.html" -->
-    <!-- Or if using a JS loader / template framework, load header.html here -->
+    <!-- Header Component Container -->
     <div id="header-container"></div>
 
-    <!-- Include Hero Component -->
+    <!-- Hero Component Container -->
     <div id="hero-container"></div>
 
-    <!-- Include Services Component -->
+    <!-- Services / Solutions Component Container -->
     <div id="services-container"></div>
 
-    <!-- Include Expertise / Stats Component -->
+    <!-- Expertise / Global Tech Standards Component Container -->
     <div id="expertise-container"></div>
 
-    <!-- Include Contact Component -->
+    <!-- Contact Component Container -->
     <div id="contact-container"></div>
 
-    <!-- Include Footer Component -->
+    <!-- Footer Component Container -->
     <div id="footer-container"></div>
 
-    <!-- Simple script to fetch and inject components for local preview -->
+    <!-- Script to fetch and inject component files -->
     <script>
         async function loadComponent(id, file) {
-            const response = await fetch(file);
-            const html = await response.text();
-            document.getElementById(id).innerHTML = html;
+            try {
+                const response = await fetch(file);
+                if (!response.ok) throw new Error(`Could not load ${file}`);
+                const html = await response.text();
+                document.getElementById(id).innerHTML = html;
+            } catch (error) {
+                console.error('Error loading component:', error);
+            }
         }
+
+        // Load modular components
         loadComponent('header-container', 'header.html');
         loadComponent('hero-container', 'hero.html');
         loadComponent('services-container', 'services.html');

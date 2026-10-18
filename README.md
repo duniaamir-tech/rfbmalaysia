@@ -1,6 +1,6 @@
 # RFB Malaysia Website
 
-Corporate landing page for RFB Malaysia Sdn. Bhd., built from static HTML fragments and deployed on Vercel.
+Corporate landing page for RFB Malaysia Sdn. Bhd., built from static HTML fragments and deployed on Vercel. Solutions include telecom infrastructure technology and custom web apps/PWAs for membership organisations.
 
 ## Project Structure
 

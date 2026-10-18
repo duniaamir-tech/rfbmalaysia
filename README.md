@@ -1,23 +1,30 @@
-# Serverless Tailwind Website Template
+# RFB Malaysia Website
 
-A modern, production-ready website template structured for GitHub and serverless deployment (Vercel / Netlify).
+Corporate landing page for RFB Malaysia Sdn. Bhd., built with static HTML fragments, Tailwind CSS, and a lightweight JSON-backed data layer for serverless deployment.
 
 ## Project Structure
 
 ```text
-website_project/
-├── public/                 # Public HTML folder (static assets & index.html)
-│   ├── index.html          # Main landing page with Tailwind & JSON fetch
+rfb-malaysia-website/
+├── public/                 # Static site and reusable HTML sections
+│   ├── index.html          # Main landing page
+│   ├── header.html         # Header/navigation
+│   ├── hero.html           # Hero section
+│   ├── services.html       # Services section
+│   ├── expertise.html      # Expertise section
+│   ├── contact.html        # Contact details and inquiry form
+│   ├── footer.html         # Footer
 │   └── assets/
 │       └── css/
 │           └── input.css   # Tailwind source CSS
 ├── data/
-│   └── database.json       # Centralized JSON database
+│   └── database.json       # Organization and service data
 ├── api/
 │   └── data.js             # Serverless function endpoint
 ├── package.json            # Node.js dependencies and build scripts
 ├── tailwind.config.js      # Tailwind CSS configuration
-└── vercel.json             # Serverless routing configuration
+├── vercel.json             # Vercel routing configuration
+└── README.md               # Project overview
 ```
 
 ## Local Development
@@ -31,13 +38,14 @@ website_project/
    ```bash
    npm run build
    ```
-   Or run the Tailwind watcher during development:
+
+3. Or run the Tailwind watcher during development:
    ```bash
    npm run dev
    ```
 
-## Deployment on GitHub & Vercel
+## Deployment
 
-1. Push this repository to GitHub.
-2. Import the repository into Vercel or Netlify.
-3. The platform will automatically detect `package.json`, build the Tailwind styles, and serve static pages from `public/` alongside serverless API routes in `api/`.
+1. Push the repository to GitHub.
+2. Import it into Vercel or Netlify.
+3. The platform will detect `package.json`, build the CSS, and serve the static site from `public/` with API support from `api/`.

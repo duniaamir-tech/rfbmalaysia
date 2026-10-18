@@ -1,7 +1,7 @@
 {
-  "name": "dpmm-putrajaya-portal",
+  "name": "rfb-malaysia-website",
   "version": "1.0.0",
-  "description": "Serverless website template with Tailwind CSS, JSON storage, and public_html structure",
+  "description": "RFB Malaysia corporate website with Tailwind CSS, JSON-backed content, and static component structure",
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --minify",

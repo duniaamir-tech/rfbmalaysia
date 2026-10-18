@@ -3,7 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply antialiased text-slate-800 bg-slate-50;
+    @apply antialiased text-slate-800 bg-slate-100;
+    background-image:
+      linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+      linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+    background-size: 28px 28px, 28px 28px, 100% 100%;
+  }
+
+  ::selection {
+    background: rgba(103, 232, 249, 0.35);
+    color: #0f172a;
+  }
+}
+
+@layer components {
+  .tech-panel {
+    @apply bg-slate-900/95 border border-slate-700/80 backdrop-blur-sm;
+    box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.15), 0 20px 45px rgba(8, 19, 28, 0.35);
+  }
+
+  .tech-chip {
+    @apply inline-flex items-center rounded-full border border-sky-400/30 bg-sky-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.22em] text-sky-300;
   }
 }

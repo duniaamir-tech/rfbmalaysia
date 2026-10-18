@@ -1,40 +1,41 @@
 {
   "organization": {
-    "name": "Dewan Perniagaan Melayu Malaysia Putrajaya",
-    "shortName": "DPMM Putrajaya",
-    "tagline": "Empowering Business Excellence & Digital Innovation",
-    "email": "info@dpmmputrajaya.org.my",
-    "phone": "+60 3-8888 9999",
-    "address": "Putrajaya, Malaysia"
+    "name": "RFB Malaysia Sdn. Bhd.",
+    "shortName": "RFB Malaysia",
+    "tagline": "Precision GIS, Telecom Infrastructure & Enterprise Solutions",
+    "website": "www.rfbmalaysia.com",
+    "email": "sales@rfbmalaysia.com",
+    "phone": "+60 (19) 4430 0400",
+    "address": "No 43-3 Jalan Nova U5/K, Subang Bestari, 40150 Shah Alam, Selangor"
   },
   "announcements": [
     {
       "id": 1,
-      "title": "Bilateral Trade Delegation & MOU Signing 2026",
+      "title": "Telecom Asset Optimization Programme",
       "date": "2026-09-15",
-      "category": "International Trade",
-      "summary": "Coordinating high-level business delegations and strategic MOU renewals with international chambers."
+      "category": "Infrastructure",
+      "summary": "Delivering GIS-driven network intelligence and plan-versus-as-built reconciliation for telecom operators."
     },
     {
       "id": 2,
-      "title": "Perlis Inland Port Logistics & Warehouse CapEx Briefing",
+      "title": "Enterprise Infrastructure Modernization",
       "date": "2026-09-20",
-      "category": "Infrastructure",
-      "summary": "Reviewing the 10-year business model and warehouse operational structures for 300,000 sq ft facilities."
+      "category": "Enterprise Solutions",
+      "summary": "Supporting large-scale infrastructure upgrades with fiber, IPTV, and asset-tracking workflows."
     }
   ],
   "services": [
     {
-      "title": "Business Networking & Advocacy",
-      "description": "Connecting Malay entrepreneurs with government stakeholders, trade ministries, and global business leaders."
+      "title": "Telecom & GIS Asset Management",
+      "description": "Automated plan vs as-built tracking, network inventory, and field verification for modern telecom infrastructure."
     },
     {
-      "title": "Digital Transformation & Technology",
-      "description": "Advising members on adopting modern web tools, database management, and telecommunications asset tracking."
+      "title": "Hospitality TV, SMATV & IPTV Systems",
+      "description": "High-reliability multimedia distribution solutions for hotels, hospitals, and residential developments."
     },
     {
-      "title": "Strategic Investment & Trade",
-      "description": "Facilitating cross-border commercial opportunities, joint ventures, and industrial park developments."
+      "title": "Enterprise Infrastructure Support",
+      "description": "Fiber-optic engineering, GPON deployment, and physical layer coordination for complex property and utility portfolios."
     }
   ]
 }

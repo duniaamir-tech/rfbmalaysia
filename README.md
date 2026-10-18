@@ -1,6 +1,6 @@
 # RFB Malaysia Website
 
-Corporate landing page for RFB Malaysia Sdn. Bhd., built with static HTML fragments, Tailwind CSS, and a lightweight JSON-backed data layer for serverless deployment.
+Corporate landing page for RFB Malaysia Sdn. Bhd., built from static HTML fragments and deployed on Vercel.
 
 ## Project Structure
 
@@ -10,13 +10,16 @@ rfb-malaysia-website/
 │   ├── index.html          # Main landing page
 │   ├── header.html         # Header/navigation
 │   ├── hero.html           # Hero section
+│   ├── about.html           # Company background and leadership
 │   ├── services.html       # Services section
 │   ├── expertise.html      # Expertise section
+│   ├── clients.html         # Clients and technology partners
 │   ├── contact.html        # Contact details and inquiry form
 │   ├── footer.html         # Footer
 │   └── assets/
-│       └── css/
-│           └── input.css   # Tailwind source CSS
+│       ├── css/
+│       │   └── input.css   # Tailwind source CSS
+│       └── ...             # Logos and page imagery
 ├── data/
 │   └── database.json       # Organization and service data
 ├── api/

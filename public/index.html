@@ -3,78 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RFB Malaysia Sdn. Bhd. delivers precision GIS, telecom infrastructure, and enterprise technology solutions for modern infrastructure operators and businesses.">
-    <meta property="og:title" content="RFB Malaysia Sdn. Bhd. | Precision GIS, Telecom Infrastructure & Enterprise Solutions">
-    <meta property="og:description" content="Precision GIS, telecom infrastructure, and enterprise technology solutions for modern infrastructure operators.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.rfbmalaysia.com">
-    <link rel="canonical" href="https://www.rfbmalaysia.com">
-    <title>RFB Malaysia Sdn. Bhd. | Precision GIS, Telecom Infrastructure & Enterprise Solutions</title>
+    <title>RFB Malaysia | Telecom Infrastructure Technology Partner</title>
+    <meta name="description" content="RFB Malaysia is a telecom network infrastructure partner for telcos, ISPs, network operators, data centers and hospitality groups. FNT Command OSS/DCIM software, AXING fiber and coaxial distribution, hotel IPTV and lightning protection solutions.">
+    <link rel="icon" type="image/jpeg" href="assets/RFB%20Logo.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="assets/RFB%20Logo.jpg">
+    <link rel="apple-touch-icon" href="assets/RFB%20Logo.jpg">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            dark: '#050d18',
-                            DEFAULT: '#0d4d8b',
-                            light: '#5bc0ff',
-                            accent: '#67e8f9',
-                            steel: '#0f172a',
-                            panel: '#0b1220',
-                            metal: '#dfe7f3'
-                        }
-                    },
-                    boxShadow: {
-                        tech: '0 0 0 1px rgba(148, 163, 184, 0.18), 0 18px 40px rgba(2, 6, 23, 0.35)'
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-sky-200 selection:text-slate-900">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Header Component Container -->
+    <!-- Include Header Component -->
+    <!--#include virtual="header.html" -->
+    <!-- Or if using a JS loader / template framework, load header.html here -->
     <div id="header-container"></div>
 
-    <!-- Hero Component Container -->
+    <!-- Include Hero Component -->
     <div id="hero-container"></div>
 
-    <!-- Services / Solutions Component Container -->
+    <!-- Include About Us Component -->
+    <div id="about-container"></div>
+
+    <!-- Include Solutions Component -->
     <div id="services-container"></div>
 
-    <!-- Expertise / Global Tech Standards Component Container -->
+    <!-- Include Trust Bar Component -->
     <div id="expertise-container"></div>
 
-    <!-- Contact Component Container -->
+    <!-- Include Clients & Partners Component -->
+    <div id="clients-container"></div>
+
+    <!-- Include Contact Component -->
     <div id="contact-container"></div>
 
-    <!-- Footer Component Container -->
+    <!-- Include Footer Component -->
     <div id="footer-container"></div>
 
-    <!-- Script to fetch and inject component files -->
+    <!-- Simple script to fetch and inject components for local preview -->
     <script>
         async function loadComponent(id, file) {
-            try {
-                const response = await fetch(file);
-                if (!response.ok) throw new Error(`Could not load ${file}`);
-                const html = await response.text();
-                document.getElementById(id).innerHTML = html;
-            } catch (error) {
-                console.error('Error loading component:', error);
-            }
+            const response = await fetch(file);
+            const html = await response.text();
+            document.getElementById(id).innerHTML = html;
         }
-
-        // Load modular components
         loadComponent('header-container', 'header.html');
         loadComponent('hero-container', 'hero.html');
+        loadComponent('about-container', 'about.html');
         loadComponent('services-container', 'services.html');
         loadComponent('expertise-container', 'expertise.html');
+        loadComponent('clients-container', 'clients.html');
         loadComponent('contact-container', 'contact.html');
         loadComponent('footer-container', 'footer.html');
     </script>

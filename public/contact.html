@@ -2,47 +2,37 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-sky-700">Get In Touch</h2>
-                <h3 class="mb-6 text-3xl font-extrabold tracking-tight text-slate-900 lg:text-4xl">Let’s build the next stage of your infrastructure strategy.</h3>
-                <p class="mb-8 text-lg leading-relaxed text-slate-600">
-                    Whether you need intelligent asset management, telecom infrastructure support, or enterprise technology guidance, RFB Malaysia is ready to help you improve network visibility, performance, and long-term operational resilience.
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-3">Get In Touch</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-6">Talk to a technical partner who understands infrastructure.</h3>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    Tell us what you are planning: OSS/DCIM software, fiber network documentation, AXING distribution hardware, hotel IPTV or lightning protection. Our team responds within 1 business day.
                 </p>
                 <div class="space-y-4 text-slate-700">
-                    <div class="flex items-center space-x-4 bg-white rounded-xl border border-slate-200 px-4 py-3 shadow-sm">
+                    <a href="mailto:sales@rfbmalaysia.com" class="flex items-center space-x-4 hover:text-blue-600 transition">
                         <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center shrink-0">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <span>sales@rfbmalaysia.com</span>
-                    </div>
-                    <div class="flex items-center space-x-4 bg-white rounded-xl border border-slate-200 px-4 py-3 shadow-sm">
-                        <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                        <span>www.rfbmalaysia.com</span>
-                    </div>
-                    <div class="flex items-center space-x-4 bg-white rounded-xl border border-slate-200 px-4 py-3 shadow-sm">
+                    </a>
+                    <a href="tel:+60194430400" class="flex items-center space-x-4 hover:text-blue-600 transition">
                         <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center shrink-0">
                             <i class="fa-solid fa-phone"></i>
                         </div>
-                        <span>+60 (19) 4430 0400</span>
-                    </div>
-                    <div class="flex items-center space-x-4 bg-white rounded-xl border border-slate-200 px-4 py-3 shadow-sm">
+                        <span>+60194430400</span>
+                    </a>
+                    <div class="flex items-center space-x-4">
                         <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center shrink-0">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <span>RFB Malaysia Sdn Bhd, No 43-3 Jalan Nova U5/K, Subang Bestari, 40150 Shah Alam, Selangor</span>
+                        <address class="not-italic leading-relaxed">RFB Malaysia Sdn Bhd<br>No 43-3 Jalan Nova U5/K<br>Subang Bestari<br>40150 Shah Alam, Selangor</address>
                     </div>
                 </div>
             </div>
 
-            <div id="inquiry-form" class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
-                <div class="flex items-center justify-between mb-6">
-                    <div>
-                        <p class="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold">Project Inquiry</p>
-                        <h4 class="text-2xl font-bold text-slate-900">Tell us about your needs</h4>
-                    </div>
-                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Response within 1 day</span>
-                </div>
+            <!-- Form Card -->
+            <div id="projects" class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+                <h4 class="text-xl font-bold text-slate-900 mb-2">Request a consultation</h4>
+                <p class="text-sm text-slate-500 mb-6">Share a few details and our team will route your request.</p>
                 <form action="#" method="POST" class="space-y-6">
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
@@ -50,14 +40,18 @@
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
-                        <input type="email" placeholder="john@company.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm">
+                        <input type="email" placeholder="you@company.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">What are you looking for?</label>
+                        <select class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm"><option>FNT Software</option><option>AXING Hardware</option><option>Hotel IPTV</option><option>Lightning Protection</option><option>Other</option></select>
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-2">Project Details / Message</label>
                         <textarea rows="4" placeholder="Tell us about your requirements..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3.5 rounded-lg transition shadow-md shadow-blue-600/25">
-                        Send Message
+                    <button type="submit" class="w-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold py-3.5 rounded-lg transition shadow-md">
+                        Request a Consultation
                     </button>
                 </form>
             </div>

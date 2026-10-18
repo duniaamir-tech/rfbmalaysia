@@ -1,0 +1,40 @@
+{
+  "organization": {
+    "name": "Dewan Perniagaan Melayu Malaysia Putrajaya",
+    "shortName": "DPMM Putrajaya",
+    "tagline": "Empowering Business Excellence & Digital Innovation",
+    "email": "info@dpmmputrajaya.org.my",
+    "phone": "+60 3-8888 9999",
+    "address": "Putrajaya, Malaysia"
+  },
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Bilateral Trade Delegation & MOU Signing 2026",
+      "date": "2026-09-15",
+      "category": "International Trade",
+      "summary": "Coordinating high-level business delegations and strategic MOU renewals with international chambers."
+    },
+    {
+      "id": 2,
+      "title": "Perlis Inland Port Logistics & Warehouse CapEx Briefing",
+      "date": "2026-09-20",
+      "category": "Infrastructure",
+      "summary": "Reviewing the 10-year business model and warehouse operational structures for 300,000 sq ft facilities."
+    }
+  ],
+  "services": [
+    {
+      "title": "Business Networking & Advocacy",
+      "description": "Connecting Malay entrepreneurs with government stakeholders, trade ministries, and global business leaders."
+    },
+    {
+      "title": "Digital Transformation & Technology",
+      "description": "Advising members on adopting modern web tools, database management, and telecommunications asset tracking."
+    },
+    {
+      "title": "Strategic Investment & Trade",
+      "description": "Facilitating cross-border commercial opportunities, joint ventures, and industrial park developments."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFB Malaysia Sdn. Bhd. | Precision GIS, Telecom Infrastructure & Enterprise Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            DEFAULT: '#1e3a8a',
+                            light: '#3b82f6',
+                            accent: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header Component Container -->
+    <div id="header-container"></div>
+
+    <!-- Hero Component Container -->
+    <div id="hero-container"></div>
+
+    <!-- Services / Solutions Component Container -->
+    <div id="services-container"></div>
+
+    <!-- Expertise / Global Tech Standards Component Container -->
+    <div id="expertise-container"></div>
+
+    <!-- Contact Component Container -->
+    <div id="contact-container"></div>
+
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
+
+    <!-- Script to fetch and inject component files -->
+    <script>
+        async function loadComponent(id, file) {
+            try {
+                const response = await fetch(file);
+                if (!response.ok) throw new Error(`Could not load ${file}`);
+                const html = await response.text();
+                document.getElementById(id).innerHTML = html;
+            } catch (error) {
+                console.error('Error loading component:', error);
+            }
+        }
+
+        // Load modular components
+        loadComponent('header-container', 'header.html');
+        loadComponent('hero-container', 'hero.html');
+        loadComponent('services-container', 'services.html');
+        loadComponent('expertise-container', 'expertise.html');
+        loadComponent('contact-container', 'contact.html');
+        loadComponent('footer-container', 'footer.html');
+    </script>
+</body>
+</html>
